@@ -18,9 +18,10 @@
                 <div class="flex gap-10">
                    <div class="flex items-center gap-2">
                     <img class="w-6" src="./assets/checkbox.png" alt="">
-                    <h1 class="text-2xl font-bold">23</h1>
+                    <h1 id="added" class="text-2xl font-bold">23</h1>
                    </div>
-                   <img class="" src="./assets/theme-btn.png" alt="">
+                 
+                   <img id="theme-btn" src="./assets/theme-btn.png" alt="">
                 </div>
            </section>
         </nav>
@@ -36,11 +37,12 @@
                     </div>
                     <div>
                         <p>Task Assigned </p>
-                        <h1 class="text-xl font-bold">05</h1>
+                        <h1 id="task-1" class="text-xl font-bold">05</h1>
                     </div>
                 </div>
 
-                <div class="flex items-center gap-4 bg-indigo-600 text-white px-5 py-5 rounded-lg">
+              <a href="./blog.html">
+                <div  class="flex items-center gap-4 bg-indigo-600 text-white px-5 py-5 rounded-lg">
                     <div>
                         <img  src="./assets/board.png" alt="">
                     </div>
@@ -48,13 +50,14 @@
                         <h1 class="text-xl">Discover Something New Today!</h1>
                     </div>
                 </div>   
+              </a>
 
                 <div class="flex gap-4 items-center bg-indigo-50 px-5 py-5 rounded-lg">
                     <div>
                         <img class="w-6" src="./assets/calender.png" alt="">
                     </div>
                     <div>
-                        <p>Mon ,</p>
+                        <p>Sun ,</p>
                         <h1 class="text-xl font-bold">Feb 02 2025 </h1>
                     </div>
                 </div>
@@ -73,7 +76,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
+                            <button onclick="disableBtn()" id="btn-complete" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
                 </div>
@@ -90,7 +93,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
+                            <button onclick="disableBtn1()" id="btn-complete1" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
                 </div>
@@ -107,7 +110,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
+                            <button onclick="disableBtn2()" id="btn-complete2" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
                 </div>
@@ -124,7 +127,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
+                            <button onclick="disableBtn3()" id="btn-complete3" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
                 </div>
@@ -141,7 +144,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
+                            <button onclick="disableBtn4()" id="btn-complete4" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
                 </div>
@@ -158,7 +161,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
+                            <button onclick="disableBtn5()" id="btn-complete5" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
                 </div>
@@ -170,7 +173,7 @@
 
         <!-- discover section done -->
       <!-- activity Log start -->
-        <section class="w-[40%] rounded-lg  ">
+        <section class="w-[60%] rounded-lg  ">
             <div class="items-center  bg-white px-5 py-5 text-center mt-2 h-screen rounded-lg  ">
                 <div class="flex items-center justify-center gap-3 ">
                  <img src="./assets/activity.png" alt="">
@@ -183,7 +186,7 @@
         
      </section>
 
-  
+  <script src="./Devboard.js"></script>
 </body>
 </html>
 
