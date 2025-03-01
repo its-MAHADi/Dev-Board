@@ -8,6 +8,7 @@
 </head>
 <body class="bg-indigo-50 container mx-auto" >
     <header>
+        <!-- nav section start -->
         <nav class="bg-white px-6 py-3 rounded-lg mt-2">
            <section class="mt-2 " >
             <div class="flex justify-between items-center">
@@ -18,13 +19,14 @@
                 <div class="flex gap-10">
                    <div class="flex items-center gap-2">
                     <img class="w-6" src="./assets/checkbox.png" alt="">
-                    <h1 id="added" class="text-2xl font-bold">23</h1>
+                    <h1 id="checkbox-count" class="text-2xl font-bold">23</h1>
                    </div>
                  
                    <img id="theme-btn" src="./assets/theme-btn.png" alt="">
                 </div>
            </section>
         </nav>
+        <!-- nav section done -->
     </header>
     <!-- discover section start -->
      <section class="flex gap-5 ">
@@ -37,7 +39,7 @@
                     </div>
                     <div>
                         <p>Task Assigned </p>
-                        <h1 id="task-1" class="text-xl font-bold">05</h1>
+                        <h1 id="task-assigned-count" class="text-xl font-bold">06</h1>
                     </div>
                 </div>
 
@@ -57,12 +59,9 @@
                         <img class="w-6" src="./assets/calender.png" alt="">
                     </div>
                     <div>
-                        <p>Sun ,</p>
-                        <h1 class="text-xl font-bold">Feb 02 2025 </h1>
+                        <h1 id="today-date" class="text-xl font-bold">Sun , <br>Feb 02 2025 </h1>
                     </div>
                 </div>
-
-
 
                 <div class="">
                     <div class="bg-indigo-50 rounded-lg px-5 py-6">
@@ -76,7 +75,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button onclick="disableBtn()" id="btn-complete" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
+                            <button id="btn-complete" class=" task-completed-button disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " > Completed </button>
                         </div>
                     </div>
                 </div>
@@ -93,7 +92,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button onclick="disableBtn1()" id="btn-complete1" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
+                            <button id="btn-complete1" class=" task-completed-button disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
                 </div>
@@ -110,7 +109,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button onclick="disableBtn2()" id="btn-complete2" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
+                            <button id="btn-complete2" class="task-completed-button disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
                 </div>
@@ -127,7 +126,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button onclick="disableBtn3()" id="btn-complete3" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
+                            <button id="btn-complete3" class="task-completed-button disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
                 </div>
@@ -144,7 +143,7 @@
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button onclick="disableBtn4()" id="btn-complete4" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
+                            <button id="btn-complete4" class="task-completed-button disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
                 </div>
@@ -154,19 +153,17 @@
                         <div class="space-y-4">
                             <p ><span class="bg-white rounded-lg py-2 px-2">Glassdoar</span></p>
                             <h1 class="text-xl font-semibold">Improve Job searching  </h1>
-                            <p class="bg-white py-3 px-2 rounded-lg">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                            <p class="bg-white py-3 px-2 rounded-lg ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                         </div>
                         <div class="flex items-center justify-between mt-2">
                             <div>
                                 <p>Deadline</p>
                                 <h1 class="font-semibold">21 March 2025</h1>
                             </div>
-                            <button onclick="disableBtn5()" id="btn-complete5" class="disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
+                            <button id="btn-complete5" class="task-completed-button disabled:bg-gray-500 px-4 py-2 bg-blue-600 text-white rounded-lg mt-3 " >Completed</button>
                         </div>
                     </div>
-                </div>
-            
-              
+                </div>     
 
             </div>
         </section>
@@ -179,275 +176,14 @@
                  <img src="./assets/activity.png" alt="">
                  <h1>Activity Log</h1>
                 </div>
-                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Clear History</button>
+                <button id="clear-history-button" class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Clear History</button>
+                <div class="main-right-bottom-container space-y-5 bg-indigo-50 px-2  rounded-lg mt-4" id="main-right-bottom-container">
+                </div>
                 </div>
         </section>
         <!-- activity Log done -->
         
      </section>
-
   <script src="./Devboard.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div>
-        <div class=" flex items-center bg-white px-5 py-5 rounded-lg  gap-5  w-[100%] justify-between ">
-            <div class="flex items-center gap-5 bg-indigo-50 px-4 py-7 rounded-lg">
-                <div class="bg-white px-3 py-3 rounded-full">
-                    <img class="w-6" src="./assets/checkbox.png" alt="">
-                </div>
-                <div>
-                 <p>Task Assigned </p>
-                 <h1 class="text-2xl font-bold">05</h1>
-                </div>
-            </div>
-    
-            <div class="bg-blue-600 text-white flex items-center px-10 py-4 rounded-lg gap-5 ">
-                <img src="./assets/board.png" alt="">
-                <h1>Discover Something <br> New Today!</h1>
-            </div>
-    
-            <div class="flex items-center gap-5 bg-indigo-50 px-4 py-7 rounded-lg ">
-                <div class="bg-white px-3 py-3 rounded-full">
-                    <img class="w-6" src="./assets/calender.png" alt="">
-                </div>
-                <div>
-                 <p>Wed , </p>
-                 <h1 class="text-xl font-bold">Jul 28 2025 </h1>
-                </div>
-            </div> -->
-
-
-
-
-
-            <!-- 2nd -->
-             
-           <!-- <div class="items-center  bg-white py-5 text-center w-[50%]">
-            <div class="flex items-center justify-center gap-3 ">
-             <img src="./assets/activity.png" alt="">
-             <h1>Activity Log</h1>
-            </div>
-            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Clear History</button>
-            </div> -->
-
-
-
-            <!-- box-3 -->
-             <!--   <div class="">
-        <div class="bg-indigo-50 px-5">
-            <div>
-                <p ><span class="bg-white rounded-lg py-2 px-1">ShopEase</span></p>
-                <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
-                <p class="bg-white py-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-            </div>
-            <div class="flex items-center justify-between">
-                <div>
-                    <p>Deadline</p>
-                    <h1 class="font-semibold">21 March 2025</h1>
-                </div>
-                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="">
-        <div class="bg-indigo-50 px-5">
-            <div>
-                <p ><span class="bg-white rounded-lg py-2 px-1">ShopEase</span></p>
-                <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
-                <p class="bg-white py-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-            </div>
-            <div class="flex items-center justify-between">
-                <div>
-                    <p>Deadline</p>
-                    <h1 class="font-semibold">21 March 2025</h1>
-                </div>
-                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="">
-        <div class="bg-indigo-50 px-5">
-            <div>
-                <p ><span class="bg-white rounded-lg py-2 px-1">ShopEase</span></p>
-                <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
-                <p class="bg-white py-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-            </div>
-            <div class="flex items-center justify-between">
-                <div>
-                    <p>Deadline</p>
-                    <h1 class="font-semibold">21 March 2025</h1>
-                </div>
-                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
-            </div>
-        </div>
-    </div> -->
-
-
-
-
-    <!--   <section>
-          <div>
-             <div>
-              <div class="flex items-center gap-5  ">
-
-                <div class=" grid grid-cols-3 items-center bg-white px-5 py-5 rounded-lg w-[80%]  gap-5 mt-2  ">
-                    <div class="flex items-center gap-5 bg-indigo-50 px-4 py-7 rounded-lg ">
-                        <div class="bg-white px-3 py-3 rounded-full">
-                            <img class="w-6" src="./assets/checkbox.png" alt="">
-                        </div>
-                        <div>
-                         <p>Task Assigned </p>
-                         <h1 class="text-2xl font-bold">05</h1>
-                        </div>
-                    </div>
-
-                    <div class="bg-blue-600 text-white flex items-center px-10 py-4 rounded-lg gap-5  ">
-                        <img src="./assets/board.png" alt="">
-                        <h1>Discover Something <br> New Today!</h1>
-                    </div>
-    
-                    <div class="flex items-center gap-5 bg-indigo-50 px-4 py-7 rounded-lg ">
-                        <div class="bg-white px-3 py-3 rounded-full">
-                            <img class="w-6" src="./assets/calender.png" alt="">
-                        </div>
-                        <div>
-                         <p>Wed , </p>
-                         <h1 class="text-xl font-bold">Jul 28 2025 </h1>
-                        </div>
-
-
-
-
-                        
-
-              </div>
-
-
-              
-              <div class="">
-                <div class="bg-indigo-50 px-5">
-                    <div>
-                        <p ><span class="bg-white rounded-lg py-2 px-1">ShopEase</span></p>
-                        <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
-                        <p class="bg-white py-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p>Deadline</p>
-                            <h1 class="font-semibold">21 March 2025</h1>
-                        </div>
-                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="">
-                <div class="bg-indigo-50 px-5">
-                    <div>
-                        <p ><span class="bg-white rounded-lg py-2 px-1">ShopEase</span></p>
-                        <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
-                        <p class="bg-white py-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p>Deadline</p>
-                            <h1 class="font-semibold">21 March 2025</h1>
-                        </div>
-                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <div class="bg-indigo-50 px-5">
-                    <div>
-                        <p ><span class="bg-white rounded-lg py-2 px-1">ShopEase</span></p>
-                        <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
-                        <p class="bg-white py-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p>Deadline</p>
-                            <h1 class="font-semibold">21 March 2025</h1>
-                        </div>
-                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <div class="bg-indigo-50 px-5">
-                    <div>
-                        <p ><span class="bg-white rounded-lg py-2 px-1">ShopEase</span></p>
-                        <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
-                        <p class="bg-white py-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p>Deadline</p>
-                            <h1 class="font-semibold">21 March 2025</h1>
-                        </div>
-                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <div class="bg-indigo-50 px-5">
-                    <div>
-                        <p ><span class="bg-white rounded-lg py-2 px-1">ShopEase</span></p>
-                        <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
-                        <p class="bg-white py-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p>Deadline</p>
-                            <h1 class="font-semibold">21 March 2025</h1>
-                        </div>
-                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="">
-                <div class="bg-indigo-50 px-5">
-                    <div>
-                        <p ><span class="bg-white rounded-lg py-2 px-1">ShopEase</span></p>
-                        <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
-                        <p class="bg-white py-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p>Deadline</p>
-                            <h1 class="font-semibold">21 March 2025</h1>
-                        </div>
-                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Completed</button>
-                    </div>
-                </div>
-                
-             </div>
-             
-
-          </div>
-
-          <div class="items-center  bg-white  text-center w-[40%]  px-5 py-9 mt-2 rounded-lg  h-[720px]  ">
-            <div class="flex items-center justify-center gap-3 ">
-             <img src="./assets/activity.png" alt="">
-             <h1>Activity Log</h1>
-            </div>
-            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-3">Clear History</button>
-            </div> 
-      </section> -->
